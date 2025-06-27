@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spotify-Style Embed Player</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="playlist" style="--bg:url('assets/bg1.jpg')">
+    <div class="main-track">
+      <img class="cover" src="assets/cover1.jpg" alt="Cover" />
+      <div class="track-info">
+        <h2>PUNKWARE202</h2>
+        <p>Beastboi. - Topic</p>
+      </div>
+      <div class="controls">
+        <span class="time">0:00</span>
+        <input type="range" class="seek" min="0" max="100" value="0" />
+        <span class="duration">3:52</span>
+        <div class="buttons">
+          <button>⏮</button>
+          <button class="play">▶</button>
+          <button>⏭</button>
+        </div>
+      </div>
+    </div>
+    <div class="tracklist">
+      <div class="track" data-src="assets/track1.mp3">
+        <img src="assets/cover1.jpg" />
+        <div>
+          <strong>PUNKWARE202</strong><br/>
+          <span>Beastboi. - Topic</span>
+        </div>
+        <span class="length">3:28</span>
+      </div>
+      <div class="track" data-src="assets/track2.mp3">
+        <img src="assets/cover2.jpg" />
+        <div>
+          <strong>Punishment Prejudice</strong><br/>
+          <span>Nosphere - Topic</span>
+        </div>
+        <span class="length">3:52</span>
+      </div>
+      <div class="track" data-src="assets/track3.mp3">
+        <img src="assets/cover3.jpg" />
+        <div>
+          <strong>Falling in Love</strong><br/>
+          <span>No Mana - Topic</span>
+        </div>
+        <span class="length">3:38</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
